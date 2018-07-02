@@ -1,9 +1,12 @@
 <?php
 	
 	// Define a Constant
-	
+	define('TITLE', "Doro's Variables and Constants");
 	
 	// Your Variables
+	$myName = 'Ezekiel Saturday';
+	$favColor = 'blue';
+	$birthYear = 1996;
 	
 	
 	/*
@@ -11,6 +14,9 @@
 	between your birth year and this year
 	to show your age dynamically
 	*/
+	$today = date('F j, Y');
+	$thisYear = date('Y');
+	$age = $thisYear - $birthYear;
 
 	
 ?>
@@ -18,7 +24,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Get Your Hands Dirty: <!-- PAGE TITLE --></title>
+		<title>Get Your Hands Dirty: <!-- PAGE TITLE --> <?php echo(TITLE);?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -27,30 +33,41 @@
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Get Your Hands Dirty: <small><!-- PAGE TITLE --></small></h1>
+			<h1>Get Your Hands Dirty: 
+				<small><!-- PAGE TITLE -->
+					 <?php echo(TITLE);?>
+				</small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
 			
 			<div class="sandbox">
 				<h3>Today's Date:</h3>
-				<p><!-- DATE --></p>
+				<p><!-- DATE -->
+					<?php echo($today);?>
+				</p>
 				
 				<h3>My Name:</h3>
-				<p><!-- YOUR NAME --></p>
+				<p><!-- YOUR NAME -->
+					<?php echo($myName);?>
+				</p>
 				
 				<h3>My Favourite Colour:</h3>
-				<p><!-- FAVOURITE COLOUR --></p>
+				<p><!-- FAVOURITE COLOUR -->
+					<?php echo($favColor);?>
+				</p>
 				
 				<h3>My Age:</h3>
-				<p><!-- YOUR AGE --></p>
+				<p><!-- YOUR AGE -->
+					<?php echo($age);?>
+				</p>
 			</div><!-- end sandbox -->
 			
 			<a href="index.php" class="button">Back to the final example</a>
 			
 			<hr>
 			
-			<small>&copy;<!-- THIS YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<!-- THIS YEAR --><?php echo($thisYear); ?> - <?php echo($myName); ?><!-- YOUR NAME --></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">

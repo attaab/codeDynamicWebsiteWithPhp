@@ -1,28 +1,30 @@
 <?php
 	
 	// Constants
+	define('TITLE', "Doro's PHP array's");
 
 	
 	// Custom Variables
-
+	$lessonNumber = 6;
 	
 	// Moustache Array
-	
+	$moustaches = Array('HandleBars', "Salvador Dali", "Fu Manchu");
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><!-- PAGE TITLE --></title>
+		<title><?php echo(TITLE) ?></title>
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
+
 		<div class="wrapper">
 			<a href="/" title="Back to directory" id="logo">
 				<img src="../assets/img/logo.png" alt="PHP">
 			</a>
 			
-			<h1>Lecture <!-- LESSON NUMBER -->: <small><!-- PAGE TITLE --></small></h1>
+			<h1>Lecture <?php echo($lessonNumber) ?>: <small><?php echo(TITLE) ?></small></h1>
 			<hr>
 			
 			<h2>Your Example</h2>
@@ -31,9 +33,11 @@
 			
 				<h2>Moustache Types</h2>
 				<ul>
-					<li><!-- MOUSTACHE 1 --></li>
-					<li><!-- MOUSTACHE 2 --></li>
-					<li><!-- MOUSTACHE 3 --></li>
+					<?php
+						for ($i = 0; $i < count($moustaches); $i++) { //update the range when i have learnt how to find the length of an array
+							echo('<li>'.$moustaches[$i].'</li>');
+						};
+					?>
 				</ul>
 				
 			</div><!-- end sandbox -->
