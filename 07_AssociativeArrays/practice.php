@@ -41,7 +41,7 @@
 			
 			<hr>
 			
-			<small>&copy;<?php echo(date('Y')."-".$myName)?> <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo(date('Y')." - ".$myName)?> <!-- YOUR NAME --></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">
