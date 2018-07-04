@@ -9,6 +9,9 @@
 	
 	// Moustache Array
 	$moustaches = Array('HandleBars', "Salvador Dali", "Fu Manchu");
+
+	$date = date('Y');
+	$name = 'Ezekiel Saturday';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +21,7 @@
 		<link href="../assets/styles.css" rel="stylesheet">
 	</head>
 	<body>
-
+		<?php echo $date?>
 		<div class="wrapper">
 			<a href="/" title="Back to directory" id="logo">
 				<img src="../assets/img/logo.png" alt="PHP">
@@ -46,7 +49,7 @@
 			
 			<hr>
 			
-			<small>&copy;<!-- YEAR --> - <!-- YOUR NAME --></small>
+			<small>&copy;<?php echo($date)?> - <?php echo($name)?></small>
 		</div><!-- end wrapper -->
 		
 		<div class="copyright-info">
