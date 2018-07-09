@@ -7,6 +7,40 @@
 
 	
 	// Arrays
+	$age_group = array("child", "teenager", "adult");
+	
+	$handlebar = array(
+					"name"		=> "Handlebar",
+					"colour"	=> "black"
+				 );
+	
+	$fu_manchu = array(
+					"name"		=> "Fu Manchu",
+					"colour"	=> "brown"
+				);
+				
+	$salvador_dali = array(
+						"name"		=> "Salvador Dali",
+						"colour"	=> "blonde"
+					);			
+	
+	$gentlemen = array (
+
+					array (
+						"first_name"		=> "Carter",
+						"country"			=> "Canada"
+					),
+					array (
+						"first_name"		=> "Rodrigo",
+						"country"			=> "Uruguay"
+					),
+					array (
+						"first_name"		=> "Giovanni",
+						"country"			=> "Italy"
+					)
+
+			  );
+?>
 	
 ?>
 
